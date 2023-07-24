@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body{
+    background-color: #fff;
+    color: #000;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Schibsted Grotesk', sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+
+.container{
+    background-color: #dadada;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    margin: 5%;
+    
+
+}
+
+.container-text{
+    /* flex: 2; */
+    width: 50%;
+    margin-left: 2.5%;
+    background-color: #dadada;
+    z-index: 2;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.subtitle{
+    margin-top: 10%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 80%;
+    
+}
+
+.button{
+    width: auto;
+    text-decoration: none;
+    margin-top: 5%;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-text{
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.5s;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.button-icon{
+    position: relative;
+    transform: rotate(-30deg);
+    width: 2rem;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+svg{
+    transition: all 0.5s;
+    fill: #fff;
+}
+
+
+.button:hover 
+{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.button:hover .button-icon {
+    transform: rotate(0deg);
+    transform: translateX(5px);
+}
+
+.button:hover .button-icon svg{
+    fill: #000;
+}
+
+
+
+
+
+
+
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Nascondi le barre dello slider per i browser basati su WebKit */
+  }
+  
+  /* Stili aggiuntivi per il contenuto all'interno del div con scorrimento orizzontale */
+  .carousel > * {
+    /* Imposta il display in linea per gli elementi all'interno del div */
+    display: inline-block;
+  }
+
+
+  .carousel {
+    margin-left: 200px;
+    width: 200px;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+
+
+.card{
+    z-index: 1;
+    flex: 0 0 500px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-right: 50px;
+    /* width: 500px;
+    height: 400px;
+    margin-right: 50px; */
+
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Aggiungi questa classe CSS per nascondere la card */
+.card.hidden {
+    visibility: hidden;
+  }
+
+.card-title{
+    flex: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.card-image{
+    flex: 2;
+    top:0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.image{
+    width:100%;
+    pointer-events: none;
+    
+    border-radius: 30px;
+}

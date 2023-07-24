@@ -1,0 +1,43 @@
+/* Stili per dispositivi mobili con larghezza massima di 767px */
+@media (max-width: 767px) {
+
+    .text-container{
+        width: 100%;
+    }
+
+    .empty-container{
+        display: none;
+    }
+    .title{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .subtitle{
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+
+    .button{
+        margin-top: 20%;
+    }
+
+    .button-text{
+        font-size: 1rem;
+    }
+
+    .container-image{
+        width: 800px;
+        opacity: 0.5;
+    }
+
+   .button-icon {
+        transform: rotate(0deg);
+        /* transform: translateX(5px); */
+    }
+}
+  
+  /* Stili per dispositivi desktop con larghezza minima di 768px */
+  @media (min-width: 768px) {
+
+  }

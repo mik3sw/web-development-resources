@@ -1,0 +1,33 @@
+/* Stili per dispositivi mobili con larghezza massima di 767px */
+@media (max-width: 767px) {
+
+    .container-text{
+        width: 90%;
+        margin-top: 20%;
+    }
+    .container-image{
+        width: 80%;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        /* height: 6rem; */
+    }
+    
+    .subtitle{
+
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .content{
+        margin-top: 10%;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+}
