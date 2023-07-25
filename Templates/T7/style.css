@@ -15,14 +15,27 @@ html, body{
 }
 
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Imposta l'altezza del body al 100% dell'altezza della finestra del browser */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .container{
     background-color: #dadada;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    height: 700px;
-    margin: 5%;
+    /* height: 700px; */
+    
+    width: 80%; 
+    margin: 5% auto;
+    padding:5%;
     
 
 }

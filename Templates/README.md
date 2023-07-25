@@ -6,6 +6,9 @@ This is how I would implement the following templates. I'm not sure if it's the 
 
 **All templates are fully responsive** (at least i'll try).
 
+
+The inspiration for these templates is from this [Youtube Video](https://www.youtube.com/watch?v=Zddof7W_xnY&t=207s)
+
 ## Template 1
 
 <div style="display: flex;">

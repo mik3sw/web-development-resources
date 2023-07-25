@@ -1,8 +1,12 @@
+
+let translateX = 0;
+
+
 $(document).ready(function() {
     let isDragging = false;
     let startPosition = 0;
     let endPosition = 0;
-    let translateX = 0;
+    // let translateX = 0;
     let currentTranslateX = 0;
     const cardWidth = $('.card').outerWidth(true);
 
@@ -51,7 +55,7 @@ $(document).ready(function() {
 //     let translateX = 0;
 //     const cardWidth = $('.card').outerWidth(true);
 //     const carouselWidth = $('.carousel').width();
-//     const maxTranslateX = 1000; // Imposta il limite desiderato in pixel
+//     const maxTranslateX = 0; // Imposta il limite desiderato in pixel
 
 //     $('.carousel-inner').on('wheel', function(e) {
 //       e.preventDefault();
@@ -71,4 +75,31 @@ $(document).ready(function() {
 //       $(this).css('transform', `translateX(${translateX}px)`);
 //     });
 //   });
+
+
+
+
+  $(document).ready(function() {
+    
+    const cardWidth = $('.card').outerWidth(true);
+    const carouselWidth = $('.carousel').width();
+
+    $('.carousel').on('wheel', function(e) {
+      e.preventDefault();
+      const delta = e.originalEvent.deltaX || e.originalEvent.deltaY; // Usa deltaX per lo scorrimento orizzontale del trackpad
+      translateX = Math.min(0, Math.max(carouselWidth - cardWidth * $('.card').length, translateX - delta));
+      
+      // Nascondi solo la card che tocca il limite sinistro del carosello
+      $('.card').each(function(index, card) {
+        const cardLeftPosition = index * cardWidth + translateX;
+        if (cardLeftPosition <= -700) {
+          $(card).addClass('hidden');
+        } else {
+          $(card).removeClass('hidden');
+        }
+      });
+
+      $('.carousel-inner').css('transform', `translateX(${translateX}px)`);
+    });
+  });
 
