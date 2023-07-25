@@ -6,7 +6,7 @@ The goal of this repository is to gather useful content for creative frontend de
 
 For this work i'm going to use pure HTML, CSS and JavaScript
 
-![](./Templates/images/t1.png)
+![](./Templates/images/t7.png)
 
 ## Legend
 - ✅: **Completed**
