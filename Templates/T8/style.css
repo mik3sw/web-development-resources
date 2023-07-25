@@ -46,6 +46,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s;
+    
+    opacity: 0;
+    transform: scale(1.1); /* Inizialmente rendi tutti gli elementi più grandi */
+    /* transition: opacity 0.5s ease, transform 0.5s ease; */
+}
+
+.card:hover{
+    transform: scale(0.95);
+    background-color: #d0d0d0;
 }
 
 .card-image{
@@ -60,6 +70,7 @@ body{
     margin-top: 5%;
     font-size: 1.5rem;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .card-text{
@@ -185,3 +196,30 @@ svg{
     color: #fff;
     font-size: 1.6rem;
 }
+
+
+
+
+
+.drop-up {
+    animation: drop-up 1s cubic-bezier(0.075, 0.82, 0.165, 1) 200ms backwards;
+}
+
+.drop-up2 {
+    animation: drop-up 1s cubic-bezier(0.075, 0.82, 0.165, 1) 300ms backwards;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+@keyframes drop-up {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
