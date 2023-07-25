@@ -14,6 +14,7 @@ For this work i'm going to use pure HTML, CSS and JavaScript
 - ⛔️: **Not started yet**
 
 ## Table of contents
+- [Online Resources ✅](./OnlineResources/README.md)
 - [Templates ⚠️](./Templates/README.md)
 - [Components ⛔️](./Components/README.md)
-- [Online Resources ⛔️](./OnlineResources/README.md)
+
