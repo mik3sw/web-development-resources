@@ -12,6 +12,7 @@ This is my personal list of free (or paid and free) online resources, such as il
 - [Stock Images](#stock-images)
 - [Color Palettes](#color-palettes)
 - [Utility and Tools](#utility-and-tools)
+- [Javascript](#javascript)
 
 
 ## Illustrations
@@ -89,3 +90,12 @@ This is my personal list of free (or paid and free) online resources, such as il
 - [MeshGradient](https://meshgradient.in/): Generate mesh gradients
 
 - [Shots](https://shots.so/): create beautiful mockup
+
+- [100L5](https://10015.io/): a list of useful online tools
+
+
+## Javascript
+
+- [AnimXYZ](https://animxyz.com/): Generatore di animazioni
+
+- [Animate on scroll](https://michalsnik.github.io/aos/)
