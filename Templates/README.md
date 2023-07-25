@@ -109,3 +109,17 @@ The inspiration for these templates is from this [Youtube Video](https://www.you
     <img src="images/t7.png">
   </div>
 </div>
+
+## Template 8
+
+<div style="display: flex;">
+  <div style="flex: 1;">
+  <a href="../Templates/T8/">Source code</a><br>
+  This template shows a grid of cards on the left and title, subtitle, explore button and socials on the right side.
+    <br>
+  <b>Responsive</b>: ❌
+  </div>
+  <div style="flex: 1;">
+    <img src="images/t8.png">
+  </div>
+</div>
