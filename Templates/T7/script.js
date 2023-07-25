@@ -32,7 +32,7 @@ $(document).ready(function() {
     // Nascondi solo la card che tocca il limite sinistro del carosello
     $('.card').each(function(index, card) {
         const cardLeftPosition = index * cardWidth + translateX;
-        if (cardLeftPosition <= -700) {
+        if (cardLeftPosition <= -600) {
           $(card).addClass('hidden');
         } else {
           $(card).removeClass('hidden');
@@ -92,7 +92,7 @@ $(document).ready(function() {
       // Nascondi solo la card che tocca il limite sinistro del carosello
       $('.card').each(function(index, card) {
         const cardLeftPosition = index * cardWidth + translateX;
-        if (cardLeftPosition <= -700) {
+        if (cardLeftPosition <= -600) {
           $(card).addClass('hidden');
         } else {
           $(card).removeClass('hidden');
